@@ -5,7 +5,7 @@
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Edward-Doong/zmq-edward.git"
+    "url": "git+ssh://git@github.com/Edward-Doong/zmq-edward.git"
   },
   "dependencies": {
     "nan": "~2.3.0",
@@ -20,9 +20,19 @@
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha --expose-gc --slow 2000 --timeout 600000"
+    "test": "mocha --expose-gc --slow 2000 --timeout 600000",
+    "install": "node-gyp rebuild"
   },
-  "keywords": ["zeromq", "zmq", "0mq", "ømq", "libzmq", "native", "binding", "addon"],
+  "keywords": [
+    "zeromq",
+    "zmq",
+    "0mq",
+    "ømq",
+    "libzmq",
+    "native",
+    "binding",
+    "addon"
+  ],
   "license": "MIT",
   "author": "Justin Tulloss <justin.tulloss@gmail.com> (http://justin.harmonize.fm)",
   "contributors": [
@@ -57,5 +67,14 @@
     "Alejandro (https://github.com/Minjung)",
     "Eli Skeggs <skeggse@gmail.com> (https://github.com/skeggse)",
     "Bent Cardan <bent@nothingsatisfies.com> (https://github.com/reqshark)"
-  ]
+  ],
+  "gypfile": true,
+  "bugs": {
+    "url": "https://github.com/Edward-Doong/zmq-edward/issues"
+  },
+  "homepage": "https://github.com/Edward-Doong/zmq-edward#readme",
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  }
 }
