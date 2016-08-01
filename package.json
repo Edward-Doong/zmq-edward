@@ -5,7 +5,7 @@
   "main": "index",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Edward-Doong/zmq-edward.git"
+    "url": "http://github.com/Edward-Doong/zmq-edward.git"
   },
   "dependencies": {
     "nan": "~2.3.0",
