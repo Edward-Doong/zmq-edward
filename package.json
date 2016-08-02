@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "nan": "~2.3.0",
+    "prebuild": "^2.9.0",
     "bindings": "~1.2.1"
   },
   "devDependencies": {
@@ -21,7 +22,7 @@
   },
   "scripts": {
     "test": "mocha --expose-gc --slow 2000 --timeout 600000",
-    "install": "node-gyp rebuild"
+    "install": "prebuild --install"
   },
   "keywords": [
     "zeromq",
